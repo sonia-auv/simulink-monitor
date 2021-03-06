@@ -6,4 +6,6 @@ source $ROS_WS_SETUP
 # setup sonia environment
 source $SONIA_WS_SETUP
 
+sudo service ssh start
+
 exec "$@"
