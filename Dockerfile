@@ -1,4 +1,4 @@
-ARG BASE_IMAGE="docker.pkg.github.com/sonia-auv/sonia_common/sonia_common:x86-perception-release-1.0.9"
+ARG BASE_IMAGE="docker.pkg.github.com/sonia-auv/sonia_common/sonia_common:x86-perception-latest"
 
 FROM ${BASE_IMAGE}
 
