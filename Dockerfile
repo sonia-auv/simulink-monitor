@@ -49,5 +49,5 @@ RUN chmod +x ${SCRIPT_DIR}/entrypoint.sh && chmod +x ${SCRIPT_DIR}/launch.sh
 
 RUN echo "source $SONIA_WS_SETUP" >> ~/.bashrc
 
-ENTRYPOINT ["/bin/bash","./scripts/entrypoint.sh"]
-# CMD ["./scripts/launch.sh"] 
+ENTRYPOINT ["./scripts/entrypoint.sh"]
+CMD ["/bin/bash"] 
