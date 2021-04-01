@@ -9,7 +9,7 @@
             "type": "ros",
             "request": "launch",
             "preLaunchTask": "build",
-            "target": "/home/sonia/ros_sonia_ws/src/proc_control/launch/Test_Traj.launch",
+            "target": "/home/sonia/ros_sonia_ws/src/simulink_monitor/launch/Test_Traj.launch",
         }
     ]
 }

@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microser run -a STDOUT -a STDERR --mount target=/home/sonia/ros_sonia_ws/src/proc_control,type=volume --mount source=vscode-server-extension,target=/home/sonia/.vscode-server/extensions,type=volume --mount type=volume,src=vscode,dst=/vscode -l vsch.quality=stable -l vsch.remote.devPort=0oft/vscode-dev-containers/tree/v0.128.0/containers/docker-existing-dockerfile
+// https://github.com/microser run -a STDOUT -a STDERR --mount target=/home/sonia/ros_sonia_ws/src/simulink_monitor,type=volume --mount source=vscode-server-extension,target=/home/sonia/.vscode-server/extensions,type=volume --mount type=volume,src=vscode,dst=/vscode -l vsch.quality=stable -l vsch.remote.devPort=0oft/vscode-dev-containers/tree/v0.128.0/containers/docker-existing-dockerfile
 {
-	"name": "proc_control",
+	"name": "simulink_monitor",
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
@@ -20,11 +20,11 @@
 		"seccomp=unconfined",
 		"--rm",
 		"--publish",
-		"2222:22"
+		"22:22"
 	],
 	"mounts": [
 		"source=vscode-server-extension,target=/home/sonia/.vscode-server/extensions,type=volume"
 	],
-	"workspaceMount": "target=/home/sonia/ros_sonia_ws/src/proc_control,type=volume",
-	"workspaceFolder": "/home/sonia/ros_sonia_ws/src/proc_control"
+	"workspaceMount": "target=/home/sonia/ros_sonia_ws/src/simulink_monitor,type=volume",
+	"workspaceFolder": "/home/sonia/ros_sonia_ws/src/simulink_monitor"
 }

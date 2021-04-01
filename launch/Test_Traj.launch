@@ -1,6 +1,0 @@
-<launch>
-<node name="test_traj"
-pkg="test_traj"
-type="test_traj_node"
-output="screen" />
-</launch> 
