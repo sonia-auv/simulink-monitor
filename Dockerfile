@@ -28,6 +28,8 @@ ENV SONIA_WS_SETUP=${SONIA_WS}/devel/setup.bash
 
 WORKDIR ${SONIA_WS}
 
+RUN apt update
+
 RUN apt install  openssh-server -y
 
 COPY . ${NODE_PATH}
